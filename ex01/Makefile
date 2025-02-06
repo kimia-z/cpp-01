@@ -4,7 +4,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 CPP = c++
 
-SRC = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
+SRC = main.cpp Zombie.cpp zombieHorde.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
