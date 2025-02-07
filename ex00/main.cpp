@@ -3,8 +3,9 @@
 
 int main()
 {
-	// Zombie zombie("zomb");
-	std::cout << "here!!!!!!!" << std::endl;
-	// Zombie *heapZombie = newZombie("Heapi");
+	Zombie *heapZombie = newZombie("Heap zombie");
+	heapZombie->announce();
+	delete heapZombie;
+	randomChump("stack zombie");
 	return 0;
 }
