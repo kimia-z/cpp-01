@@ -11,8 +11,6 @@ private:
 	void warning(void);
 	void error(void);
 public:
-	// Harl(/* args */);
-	// ~Harl();
 	void complain(std::string level);
 };
 

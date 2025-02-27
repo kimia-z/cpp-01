@@ -23,3 +23,15 @@ void Harl::error(void)
 	std::cout << "This is unacceptable! I want to speak to the manager now."
 			<< std::endl;
 }
+
+void Harl::complain(std::string level)
+{
+	void (Harl::*class_ptr[4]) (void) =
+	{
+		&Harl::debug,
+		&Harl::info,
+		&Harl::warning,
+		&Harl::error
+	};
+	int levels[4];
+}
