@@ -10,7 +10,6 @@ private:
 	Weapon *weapon;
 public:
 	HumanB(std::string name);
-	// ~HumanA();
 	void setWeapon(Weapon& weapon);
 	void attack();
 };
