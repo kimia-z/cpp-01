@@ -13,6 +13,11 @@ int main(int argc, char **argv)
 	std::string s1 = argv[2];
 	std::string s2 = argv[3];
 	
+	if (s1.empty() || s2.empty())
+	{
+		std::cerr << "strings should not be empty!" << std::endl;
+		return 1;
+	}
 	std::ifstream input(filename.c_str());
 	if (!input.is_open())
 	{
@@ -23,6 +28,7 @@ int main(int argc, char **argv)
 	if (!output.is_open())
 	{
 		std::cerr << "can not open the output file!" << std::endl;
+		input.close();
 		return 1;
 	}
 	std::string line;
